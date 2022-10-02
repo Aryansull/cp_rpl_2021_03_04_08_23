@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dist/output.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" /> 
     <title>Company_Profile</title>
-    <link rel="icon" type="image/x-icon" href="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body > 
 
@@ -38,36 +38,24 @@
         <li><a href="#Contact">Contact</a></li></ul>
     </div>
     <div class="navbar-end">
-      <select class="select select-bordered max-w-[130px]" data-choose-theme>
-        <option disabled selected>Choose theme</option>
-        <option value="light">light</option>
-        <option value="dark">Dark</option>
-        <option value="night">night</option>
-        <option value="dracula">dracula</option>
-        <option value="lofi">lofi</option>
-        <option value="halloween">halloween</option>
-        <option value="coffee">coffee</option>
-        <option value="wireframe">wireframe</option>
-        <option value="lemonade">lemonade</option>
-        <option value="winter">winter</option>
-      </select>
+      <button data-toggle-theme="dracula,light" data-act-class="ACTIVECLASS" class="btn btn-primary btn-sm">Theme</button>
     </div>
   </div>
 
 <!-- HERO -->
   <div class="min-h-screen bg-fixed bg-center bg-cover" style="background-image: url('dist/img/photo-1597239450996-ea7c2c564412.jpg');">
-    <div class="absolute w-4/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-black bg-opacity-20 py-10 px-2 lg:p-10">
-    <p class="text-center text-4xl md:text-5xl font-bold "> Company_Profile </p>
-    <p class="text-center py-5 text-lg font-mono">Our mission is to create a shared plan <br/>
+    <div class="absolute w-4/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-black bg-opacity-20 py-10 px-2 lg:p-10" >
+    <p class="text-center text-4xl md:text-5xl font-bold " data-aos="fade-up" data-aos-duration="1000"> Company_Profile </p>
+    <p class="text-center py-5 text-lg font-mono" data-aos="fade-up" data-aos-duration="1000">Our mission is to create a shared plan <br/>
     for saving the planet’s most exceptional wild places.</p>
     </div>
   </div>
 
 <!-- NEWS1 -->
-  <div class="hero min-h-screen bg-base-200" id="News">
+  <div class="hero min-h-screen bg-base-200"  id="News">
     <div class="hero-content flex-col md:flex-row-reverse">
-      <img src="https://source.unsplash.com/900x900?php" class="w-90 sm:max-w-sm lg:max-w-md rounded-lg shadow-2xl lg:ml-10" />
-      <div>
+      <img src="https://source.unsplash.com/900x900?php" class="w-90 sm:max-w-sm lg:max-w-md rounded-lg shadow-2xl lg:ml-10" data-aos="fade-right" data-aos-duration="2000" />
+      <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="text-4xl lg:text-5xl font-bold text-justify">Box Office News!</h1>
         <p class="py-6 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -83,8 +71,8 @@
 <!-- NEWS2 -->
   <div class="hero min-h-screen bg-base-300 ">
     <div class="hero-content flex-col md:flex-row-reverse">
-    <img src="dist/img/photo-1597239450996-ea7c2c564412.jpg" class="w-90 sm:max-w-sm lg:max-w-md md:order-last rounded-lg shadow-2xl lg:mr-10" />
-      <div>
+    <img src="dist/img/photo-1597239450996-ea7c2c564412.jpg" class="w-90 sm:max-w-sm lg:max-w-md md:order-last rounded-lg shadow-2xl lg:mr-10" data-aos="fade-right" data-aos-duration="2000"/>
+      <div data-aos="fade-down" data-aos-duration="1000">
         <h1 class="text-4xl lg:text-5xl font-bold text-justify">Box Office News!</h1>
         <p class="py-6 text-lg lg:text-xl text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -110,7 +98,7 @@
 <div class="bg-base-200 py-10" id="Services">
     <h1 class="text-4xl lg:text-5xl font-bold text-center mb-7">Our Services</h1>
     <div class="flex flex-wrap justify-center gap-6 bg-base-200">
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card-body rounded-none">
                     <h2 class="card-title">First Feature</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
@@ -119,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card-body rounded-none">
                     <h2 class="card-title">Second Feature</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
@@ -128,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card-body rounded-none">
                     <h2 class="card-title">Third Feature</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
@@ -137,7 +125,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card-body rounded-none">
                     <h2 class="card-title">Fourth Feature</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
@@ -146,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card w-96 bg-base-100 shadow-xl">
+            <div class="card w-96 bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card-body rounded-none">
                     <h2 class="card-title">Fifth Feature</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
@@ -161,29 +149,29 @@
 <!-- TEAM -->
     <div class="bg-base-100 py-10 lg:py-12" id="Team">
         <h1 class="text-4xl lg:text-5xl font-bold text-center">Our Team</h1>
-        <div class="lg:grid lg:grid-cols-2 justify-center py-10 px-10 md:px-24 gap-20">
-            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0">
+        <div class="lg:grid lg:grid-cols-2 justify-center py-10 px-10 md:px-24 gap-20" >
+            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0" data-aos="flip-up" data-aos-duration="2000" >
                 <img src="https://source.unsplash.com/900x900?code" class="w-52 sm:w-60 lg:w-44 rounded-full mx-auto" />
                 <div class="lg:pl-5 col-span-2">
                     <span class="font-semibold text-2xl text-center leading-loose">Andi, CEO</span>
                     <p class="text-base">Founder and chief visionary, Andi is the driving force behind the company. He loves to keep his hands full by participating in the development of the software, marketing, and customer experience strategies.</p>
                 </div>
             </div>   
-            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0">
+            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0" data-aos="flip-up" data-aos-duration="2000" >
                 <img src="https://source.unsplash.com/900x900?laravel" class="w-52 sm:w-60 lg:w-44 rounded-full mx-auto" />
                 <div class="lg:pl-5 col-span-2">
                     <span class="font-semibold text-2xl text-center leading-loose">Andika, COO</span>
                     <p class="text-base">Andika loves taking on challenges. With his multi-year experience as Commercial Director in the software industry, Andika has helped the company to get where it is today. Andika is among the best minds.</p>
                 </div>
             </div>   
-            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0">
+            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0" data-aos="flip-up" data-aos-duration="2000" >
                 <img src="https://source.unsplash.com/900x900?javascript" class="w-52 sm:w-60 lg:w-44 rounded-full mx-auto" />
                 <div class="lg:pl-5 col-span-2">
                     <span class="font-semibold text-2xl text-center leading-loose">Aryan, CTO</span>
                     <p class="text-base">Aryan is one of the iconic people in life who can say they love what they do. He mentors 100+ in-house developers and looks after the community of thousands of developers.</p>
                 </div>
             </div>   
-            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0">
+            <div class="lg:grid lg:grid-cols-3 mx-auto mb-14 lg:mb-0" data-aos="flip-up" data-aos-duration="2000" >
                 <img src="https://source.unsplash.com/900x900?css" class="w-52 sm:w-60 lg:w-44 rounded-full mx-auto" />
                 <div class="lg:pl-5 col-span-2">
                     <span class="font-semibold text-2xl text-center leading-loose">Zam, CFO</span>
@@ -265,6 +253,10 @@
       </div>
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>   
+  AOS.init(); 
+</script>
 <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </body>
 </html>
